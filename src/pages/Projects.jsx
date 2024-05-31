@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import Quirkify from "../assets/projects/quirkify.png";
 import ViewCodeButton from "../components/ViewCodeButton";
 import { ProjectsData } from "../data/ProjectsData";
 
@@ -12,13 +10,21 @@ const Projects = () => {
       <main className="text-primary mt-10 mx-[20px] sm:mx-[50px] md:mx-[120px]">
         <section className="sm:container mx-auto">
           <div>
-            <div className="flex flex-col items-center gap-y-1">
+            <div
+              className="flex flex-col items-center gap-y-1"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <h1 className="text-[30px] sm:text-[40px] font-semibold tracking-wide">
                 My Projects
               </h1>
               <div className="w-[140px] h-[5px] rounded-full bg-accent"></div>
             </div>
-            <p className="text-[15px] text-center mt-4 tracking-wide">
+            <p
+              className="text-[15px] text-center mt-4 tracking-wide"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               {myProjectDescription}
             </p>
           </div>
@@ -28,7 +34,7 @@ const Projects = () => {
                 key={index}
                 className="block lg:flex gap-5 space-y-3 lg:space-y-0"
               >
-                <div>
+                <div data-aos="fade-up-right" data-aos-duration="500">
                   <img
                     src={item.img}
                     alt={item.title}
@@ -36,7 +42,7 @@ const Projects = () => {
                     className="max-w-full lg:max-w-[450px] xl:max-w-[500px] rounded-[10px]"
                   />
                 </div>
-                <div>
+                <div data-aos="fade-up-left" data-aos-duration="500">
                   <h1 className="text-[20px] xs:text-[22px] xl:text-[25px] font-semibold tracking-wide">
                     {item.title}
                     <span className="font-semibold text-[16px] xs:text-[18px]">
