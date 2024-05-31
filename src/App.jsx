@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,8 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
+
         <Header />
 
         <AppRoutes />
