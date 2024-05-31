@@ -11,7 +11,11 @@ const RecentProjects = () => {
   return (
     <>
       <section className="relative pb-20">
-        <div className="flex items-center gap-x-2">
+        <div
+          className="flex items-center gap-x-2"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <div className="w-[50px] h-[3px] bg-primary"></div>
           <h1 className="text-[22px] sm:text-[25px] font-semibold">
             Featured Projects
@@ -37,6 +41,8 @@ const RecentProjects = () => {
             },
           }}
           className="px-3 pt-5 sm:pt-7 pb-14 mySwiper"
+          data-aos="fade-up"
+          data-aos-duration="500"
         >
           {ProjectsData.map((item, index) => (
             <SwiperSlide key={index}>
@@ -51,7 +57,11 @@ const RecentProjects = () => {
           ))}
         </Swiper>
 
-        <div className="mt-4 text-center">
+        <div
+          className="mt-4 text-center"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
           <LinkButton url="/projects" text="see all projects" />
         </div>
 

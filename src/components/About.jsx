@@ -11,12 +11,20 @@ const About = () => {
   return (
     <>
       <section className="relative mt-14 sm:mt-20">
-        <div className="flex items-center gap-x-2">
+        <div
+          className="flex items-center gap-x-2"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <div className="w-[50px] h-[3px] bg-primary"></div>
           <h1 className="text-[22px] sm:text-[25px] font-semibold">About Me</h1>
         </div>
         <div className="flex items-center justify-center gap-0 lg:gap-20 xl:gap-32 mt-6 sm:mt-10">
-          <div className="hidden lg:block bg-primary min-h-[275px] xl:min-h-[350px] xxl:min-h-[400px] rounded-[20px]">
+          <div
+            className="hidden lg:block bg-primary min-h-[275px] xl:min-h-[350px] xxl:min-h-[400px] rounded-[20px]"
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             <img
               src={Profile}
               alt="Profile"
@@ -24,7 +32,11 @@ const About = () => {
               className="min-w-[275px] xl:min-w-[400px] xxl:min-w-[400px] h-[275px] xl:h-[350px] xxl:h-[400px] object-cover rounded-[20px] -rotate-12"
             />
           </div>
-          <div className="w-full lg:max-w-[680px]">
+          <div
+            className="w-full lg:max-w-[680px]"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
             {about.map((item, index) => (
               <p
                 key={index}

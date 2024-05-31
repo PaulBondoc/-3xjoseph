@@ -4,12 +4,18 @@ import { Link } from "react-router-dom";
 const Links = () => {
   const socialLinks = [
     { link: "https://github.com/3xjoseph", Icon: FaGithub },
-    { link: "https://www.facebook.com/3xj0seph", Icon: FaFacebook },
+    {
+      link: "https://www.facebook.com/3xj0seph",
+      Icon: FaFacebook,
+    },
     {
       link: "https://www.linkedin.com/in/patrick-joseph-pronuevo-653a30278/",
       Icon: FaLinkedin,
     },
-    { link: "https://www.instagram.com/3x.joseph/", Icon: FaInstagram },
+    {
+      link: "https://www.instagram.com/3x.joseph/",
+      Icon: FaInstagram,
+    },
   ];
 
   return (

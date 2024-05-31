@@ -8,7 +8,12 @@ const Hero = () => {
   return (
     <>
       <section className="h-[65vh] xs:h-[75vh] md:h-[85vh] flex items-center justify-center gap-32 relative">
-        <div className="w-full max-w-[680px] flex flex-col gap-5">
+        <div
+          className="w-full max-w-[680px] flex flex-col gap-5"
+          data-aos="fade-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
           <div>
             <h3 className="text-center lg:text-start text-[25px] sm:text-[35px] md:text-[42px] lg:text-[32px] xxl:text-[45px] font-semibold tracking-wide">
               Patrick Joseph Pronuevo
@@ -29,7 +34,12 @@ const Hero = () => {
           </div>
           <DownloadButton />
         </div>
-        <div className="hidden lg:block bg-primary min-h-[275px] xl:min-h-[350px] xxl:min-h-[400px] rounded-[20px]">
+        <div
+          className="hidden lg:block bg-primary min-h-[275px] xl:min-h-[350px] xxl:min-h-[400px] rounded-[20px]"
+          data-aos="fade-left"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
           <img
             src={Profile}
             alt="Profile"

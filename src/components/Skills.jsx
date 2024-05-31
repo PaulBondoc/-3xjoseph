@@ -11,11 +11,19 @@ const Skills = () => {
     <>
       <section className="pt-10 pb-10 sm:pb-16 mx-[20px] sm:mx-[50px] md:mx-[120px]">
         <div className="sm:container mx-auto">
-          <p className="text-[28px] sm:text-[35px] md:text-[45px] font-extrabold text-center sm:w-[400px] mx-auto leading-none uppercase">
+          <p
+            className="text-[28px] sm:text-[35px] md:text-[45px] font-extrabold text-center sm:w-[400px] mx-auto leading-none uppercase"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Tools and <span className="text-accent">Frameworks</span>
           </p>
           <div className="mt-5 sm:mt-10 grid grid-cols-12 place-items-center gap-0 lg:gap-10">
-            <div className="hidden lg:block col-span-6">
+            <div
+              className="hidden lg:block col-span-6"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <img
                 src={Programmer}
                 alt="Illustration"
@@ -25,7 +33,7 @@ const Skills = () => {
             </div>
             <div className="col-span-12 lg:col-span-6 xxl:col-span-5 space-y-5 sm:space-y-8">
               {skillData.map((item, index) => (
-                <div key={index}>
+                <div key={index} data-aos="fade-up" data-aos-duration="500">
                   <h6 className="text-center lg:text-start text-[20px] tracking-wide font-bold uppercase">
                     {item.title}
                   </h6>
